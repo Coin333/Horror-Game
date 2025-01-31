@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c7bjpfvrxg4cx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+centered = false
