@@ -13,3 +13,11 @@ config_version=5
 config/name="Horror Game Web App"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/GodotTogether-main/plugin.cfg")
+
+[filesystem]
+
+import/blender/enabled=false
