@@ -1,0 +1,102 @@
+[gd_scene load_steps=13 format=3 uid="uid://biqrr1qcn4biv"]
+
+[ext_resource type="Texture2D" uid="uid://dta0sj1kg2nv2" path="res://MCSPRITEoff.png" id="1_pgkd8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcxqd"]
+atlas = ExtResource("1_pgkd8")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ofxq5"]
+atlas = ExtResource("1_pgkd8")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_826rx"]
+atlas = ExtResource("1_pgkd8")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2hal"]
+atlas = ExtResource("1_pgkd8")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dp15"]
+atlas = ExtResource("1_pgkd8")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xskp"]
+atlas = ExtResource("1_pgkd8")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5eary"]
+atlas = ExtResource("1_pgkd8")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qek6"]
+atlas = ExtResource("1_pgkd8")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iiieb"]
+atlas = ExtResource("1_pgkd8")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7x6n"]
+atlas = ExtResource("1_pgkd8")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oy1nq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcxqd")
+}],
+"loop": true,
+"name": &"Move Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ofxq5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_826rx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2hal")
+}],
+"loop": true,
+"name": &"Move Left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dp15")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xskp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5eary")
+}],
+"loop": true,
+"name": &"Move Right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qek6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iiieb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7x6n")
+}],
+"loop": true,
+"name": &"Move Up",
+"speed": 5.0
+}]
+
+[node name="Player" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_oy1nq")
+animation = &"Move Up"

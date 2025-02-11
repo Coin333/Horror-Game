@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cvs1s56t0qrfg"
+=======
+uid="uid://df20fskdjnv58"
+>>>>>>> 2b08c46a97db88e0dbc99b5773c137b9a1c7354b
 path="res://.godot/imported/spriteSheet_tiledLiquids_48x48.png-7cfbb8e0de8d94137eefcb1603695060.ctex"
 metadata={
 "vram_texture": false

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq60jxget503s"
-path="res://.godot/imported/floor_tiles.png-28a6f8a786f0f0b0918a324e67092c27.ctex"
+uid="uid://fp62ce41l2u2"
+path="res://.godot/imported/HospitalFloorTile.png-d50c2d03e1b695782bd1b035d3ef3272.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Floor Tiles/PNG/32x32/floor_tiles.png"
-dest_files=["res://.godot/imported/floor_tiles.png-28a6f8a786f0f0b0918a324e67092c27.ctex"]
+source_file="res://HospitalFloorTile.png"
+dest_files=["res://.godot/imported/HospitalFloorTile.png-d50c2d03e1b695782bd1b035d3ef3272.ctex"]
 
 [params]
 

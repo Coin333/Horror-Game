@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://83pudq1r0el1"
+=======
+uid="uid://b3uqwbqbp1ssv"
+>>>>>>> 2b08c46a97db88e0dbc99b5773c137b9a1c7354b
 path="res://.godot/imported/spriteSheet_lightBulbSmallAnimation_32x32.png-8dad25c18c177ec4735e691a720aa5dd.ctex"
 metadata={
 "vram_texture": false

@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://p0p4eism6bxa"
+=======
+uid="uid://bw7uuvq1gxs6w"
+>>>>>>> 2b08c46a97db88e0dbc99b5773c137b9a1c7354b
 path="res://.godot/imported/spriteSheet_fireEffect03_21x26.png-493a4360ee2d1bda78102fde1bebd3b0.ctex"
 metadata={
 "vram_texture": false
