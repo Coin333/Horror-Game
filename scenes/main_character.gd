@@ -9,7 +9,7 @@ func _physics_process(delta):
 
 	#Animations
 	if (velocity.x > 1 || velocity.x < -1):
-		sprite_2d.animation = "walk_left"
+		sprite_2d.play("walk_left")
 	else:
 		sprite_2d.animation = "walk_down"
 
@@ -29,7 +29,7 @@ func _physics_process(delta):
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 	move_and_slide()
 	
-	var isLeft = velocity.x < 0
+	var isLeft = velocity.x > 0
 	sprite_2d.flip_h = isLeft
 	
 #var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
