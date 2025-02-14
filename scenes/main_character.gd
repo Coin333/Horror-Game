@@ -18,15 +18,15 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("left", "right")
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = direction * SPEED *0.5
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, SPEED*0.5)
 
 	var directionV := Input.get_axis("up", "down")
 	if directionV:
-		velocity.y = directionV * SPEED
+		velocity.y = directionV * SPEED*0.5
 	else:
-		velocity.y = move_toward(velocity.y, 0, SPEED)
+		velocity.y = move_toward(velocity.y, 0, SPEED*0.5)
 	move_and_slide()
 	
 	var isLeft = velocity.x > 0
