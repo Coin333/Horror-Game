@@ -99,4 +99,6 @@ animation = &"walk_left"
 frame_progress = 0.893236
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(1.19209e-07, 3)
+scale = Vector2(0.918117, 0.823803)
 polygon = PackedVector2Array(-9, 15, -8, 19, -5, 23, 0, 27, 6, 28, 26, 28, 31, 23, 31, 11, 32, 2, 8, 4, -4, 16, -6, 14)
