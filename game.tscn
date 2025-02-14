@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://dyy12p68mgav6"]
+[gd_scene load_steps=85 format=3 uid="uid://b6thb2tmkg4xs"]
 
 [ext_resource type="Texture2D" uid="uid://byuunbjdqgxml" path="res://tiles_laboratory_LandOfPixels/16px/spriteSheet_lightBulbSmallAnimation_16x16.png" id="1_sbyli"]
 [ext_resource type="Texture2D" uid="uid://dgib55dajrfbn" path="res://Tiles/shop-and-hospital.png" id="2_vqn8q"]
@@ -13572,6 +13572,14 @@ sources/12 = SubResource("TileSetAtlasSource_043vg")
 sources/13 = SubResource("TileSetAtlasSource_1hfqp")
 sources/14 = SubResource("TileSetAtlasSource_dr7jk")
 
+[sub_resource type="Gradient" id="Gradient_a3may"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_o4vjy"]
+gradient = SubResource("Gradient_a3may")
+fill = 1
+fill_from = Vector2(0.495413, 0.509174)
+fill_to = Vector2(0.858, 0.197)
+
 [node name="Game" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -13590,3 +13598,12 @@ format = 2
 layer_0/tile_data = PackedInt32Array(-589842, 1507331, 1, -524306, 1507331, 2, -458770, 1507331, 3, -589841, 1572867, 1, -524305, 1572867, 2, -458769, 1572867, 3, -655376, 1638403, 0, -589840, 1638403, 1, -524304, 1638403, 2, -458768, 1638403, 3)
 
 [node name="node" parent="." instance=ExtResource("38_g0p8l")]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+color = Color(0, 0, 0, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="CanvasModulate"]
+position = Vector2(-324, -100)
+scale = Vector2(2.21094, 1.42188)
+texture = SubResource("GradientTexture2D_o4vjy")
