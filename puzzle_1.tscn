@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://s8mdrlktmxp8"]
+[gd_scene load_steps=13 format=3 uid="uid://s8mdrlktmxp8"]
 
+[ext_resource type="Script" path="res://puzzle_1.gd" id="1_6ocms"]
 [ext_resource type="Texture2D" uid="uid://b72dcken7jmtv" path="res://resized-images (1)/TileSheet-BedRooms.png" id="1_km6t8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sa5vb"]
@@ -22,6 +23,10 @@ region = Rect2(96, 352, 32, 32)
 atlas = ExtResource("1_km6t8")
 region = Rect2(128, 352, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbnp2"]
+atlas = ExtResource("1_km6t8")
+region = Rect2(0, 352, 32, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_8u1vw"]
 animations = [{
 "frames": [{
@@ -43,6 +48,14 @@ animations = [{
 "loop": true,
 "name": &"Default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbnp2")
+}],
+"loop": true,
+"name": &"Done",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bbiqj"]
@@ -58,11 +71,13 @@ fill = 1
 fill_from = Vector2(0.5, 0.5)
 
 [node name="\\Puzzle1" type="CharacterBody2D"]
+script = ExtResource("1_6ocms")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 light_mask = 2
 sprite_frames = SubResource("SpriteFrames_8u1vw")
 animation = &"Default"
+frame_progress = 0.792153
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -8)
