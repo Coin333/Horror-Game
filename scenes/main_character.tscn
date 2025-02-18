@@ -87,11 +87,6 @@ animations = [{
 "speed": 5.0
 }]
 
-<<<<<<< HEAD
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1g8wi"]
-radius = 18.0
-height = 42.0
-=======
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vnqu7"]
 radius = 16.0
 height = 34.0
@@ -106,7 +101,6 @@ width = 200
 height = 200
 fill = 1
 fill_from = Vector2(0.504587, 0.486239)
->>>>>>> af6a8a60b3905dc2354a5a0851408febbf7bf0aa
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(33, 36)
@@ -117,12 +111,6 @@ position = Vector2(1.375, 9.53674e-06)
 scale = Vector2(0.205729, 0.194444)
 sprite_frames = SubResource("SpriteFrames_qanvw")
 animation = &"walk_down"
-<<<<<<< HEAD
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(15, 9)
-shape = SubResource("CapsuleShape2D_1g8wi")
-=======
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -136,4 +124,3 @@ range_item_cull_mask = 3
 texture = SubResource("GradientTexture2D_yv4n6")
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
->>>>>>> af6a8a60b3905dc2354a5a0851408febbf7bf0aa
