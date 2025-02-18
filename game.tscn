@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+[gd_scene load_steps=69 format=3 uid="uid://b6thb2tmkg4xs"]
+=======
 [gd_scene load_steps=84 format=3 uid="uid://b6thb2tmkg4xs"]
+>>>>>>> af6a8a60b3905dc2354a5a0851408febbf7bf0aa
 
 [ext_resource type="Texture2D" uid="uid://byuunbjdqgxml" path="res://tiles_laboratory_LandOfPixels/16px/spriteSheet_lightBulbSmallAnimation_16x16.png" id="1_sbyli"]
 [ext_resource type="Texture2D" uid="uid://dgib55dajrfbn" path="res://Tiles/shop-and-hospital.png" id="2_vqn8q"]
@@ -37,8 +41,12 @@
 [ext_resource type="Texture2D" uid="uid://ci8sfxxys2ue0" path="res://Hospital Assets/TileSheet-StoreHouse.png" id="24_tpjrl"]
 [ext_resource type="Texture2D" uid="uid://c5qxa103tdq68" path="res://Hospital Assets/TileSheet-Trash-Puddles.png" id="25_tb1x3"]
 [ext_resource type="Texture2D" uid="uid://b1biy40gp8myo" path="res://Hospital Assets/TileSheet-Elevators.png" id="26_isnfw"]
+<<<<<<< HEAD
+[ext_resource type="PackedScene" uid="uid://r5gtok76gegi" path="res://scenes/main_character.tscn" id="27_mhpmx"]
+=======
 [ext_resource type="PackedScene" uid="uid://b4bpvwh6fd64a" path="res://scenes/node.tscn" id="38_g0p8l"]
 [ext_resource type="PackedScene" uid="uid://s8mdrlktmxp8" path="res://puzzle_1.tscn" id="39_v0k35"]
+>>>>>>> af6a8a60b3905dc2354a5a0851408febbf7bf0aa
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bsaa4"]
 texture = ExtResource("1_sbyli")
@@ -13608,6 +13616,15 @@ tile_set = SubResource("TileSet_rgbhk")
 format = 2
 layer_0/tile_data = PackedInt32Array(-589842, 1507331, 1, -524306, 1507331, 2, -458770, 1507331, 3, -589841, 1572867, 1, -524305, 1572867, 2, -458769, 1572867, 3, -655376, 1638403, 0, -589840, 1638403, 1, -524304, 1638403, 2, -458768, 1638403, 3)
 
+<<<<<<< HEAD
+[node name="CharacterBody2D" parent="." instance=ExtResource("27_mhpmx")]
+position = Vector2(-25.9999, 38)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(1.5, 1.5)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+=======
 [node name="node" parent="." instance=ExtResource("38_g0p8l")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
@@ -13616,3 +13633,4 @@ color = Color(0, 0, 0, 1)
 
 [node name="\\Puzzle1" parent="." instance=ExtResource("39_v0k35")]
 position = Vector2(-95, -183)
+>>>>>>> af6a8a60b3905dc2354a5a0851408febbf7bf0aa
