@@ -1,13 +1,13 @@
-[gd_scene load_steps=68 format=3 uid="uid://b6thb2tmkg4xs"]
+[gd_scene load_steps=69 format=3 uid="uid://b6thb2tmkg4xs"]
 
-[ext_resource type="Texture2D" uid="uid://vr2eemhidit8" path="res://tiles_laboratory_LandOfPixels/16px/spriteSheet_lightBulbSmallAnimation_16x16.png" id="1_sbyli"]
+[ext_resource type="Texture2D" uid="uid://byuunbjdqgxml" path="res://tiles_laboratory_LandOfPixels/16px/spriteSheet_lightBulbSmallAnimation_16x16.png" id="1_sbyli"]
 [ext_resource type="Texture2D" uid="uid://dgib55dajrfbn" path="res://Tiles/shop-and-hospital.png" id="2_vqn8q"]
-[ext_resource type="Texture2D" uid="uid://cnpm74ioslt1c" path="res://tiles_laboratory_LandOfPixels/16px/spriteSheet_lightingBulb02_68x73.png" id="3_p2mug"]
-[ext_resource type="Texture2D" uid="uid://d2s1u8tun37k5" path="res://tiles_laboratory_LandOfPixels/16px/spriteSheet_tiledLiquids_16x16.png" id="4_js2mg"]
-[ext_resource type="Texture2D" uid="uid://dm4v51j8otrp3" path="res://tiles_laboratory_LandOfPixels/16px/tilesFloor.png" id="5_wckr7"]
-[ext_resource type="Texture2D" uid="uid://bf3csyhfbaq5m" path="res://tiles_laboratory_LandOfPixels/16px/tilesStuff.png" id="6_hlqy0"]
-[ext_resource type="Texture2D" uid="uid://dlqpjdcb10njf" path="res://tiles_laboratory_LandOfPixels/16px/tilesWalls.png" id="7_htkr4"]
-[ext_resource type="Texture2D" uid="uid://cstyaa5foetpf" path="res://tiles_laboratory_LandOfPixels/32px/tilesFloor32.png" id="8_lsxkv"]
+[ext_resource type="Texture2D" uid="uid://clwq2ar2rqwlj" path="res://tiles_laboratory_LandOfPixels/16px/spriteSheet_lightingBulb02_68x73.png" id="3_p2mug"]
+[ext_resource type="Texture2D" uid="uid://bee80t02ys14i" path="res://tiles_laboratory_LandOfPixels/16px/spriteSheet_tiledLiquids_16x16.png" id="4_js2mg"]
+[ext_resource type="Texture2D" uid="uid://bimgs50do6yr" path="res://tiles_laboratory_LandOfPixels/16px/tilesFloor.png" id="5_wckr7"]
+[ext_resource type="Texture2D" uid="uid://ctlnpvh8d4mc5" path="res://tiles_laboratory_LandOfPixels/16px/tilesStuff.png" id="6_hlqy0"]
+[ext_resource type="Texture2D" uid="uid://dbsdpat3kn4wt" path="res://tiles_laboratory_LandOfPixels/16px/tilesWalls.png" id="7_htkr4"]
+[ext_resource type="Texture2D" uid="uid://j8fcpmff5jij" path="res://tiles_laboratory_LandOfPixels/32px/tilesFloor32.png" id="8_lsxkv"]
 [ext_resource type="Texture2D" uid="uid://dusjblueaqyjo" path="res://Tileset/Tileset.png" id="9_15v52"]
 [ext_resource type="Texture2D" uid="uid://bibtbupsh54wf" path="res://Hospital Assets/TileSheet-ConsultationOffice.png" id="10_si0he"]
 [ext_resource type="Texture2D" uid="uid://cueujp8l5fodv" path="res://Hospital Assets/TileSheet-BloodAndDead.png" id="11_witm8"]
@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://ci8sfxxys2ue0" path="res://Hospital Assets/TileSheet-StoreHouse.png" id="24_tpjrl"]
 [ext_resource type="Texture2D" uid="uid://c5qxa103tdq68" path="res://Hospital Assets/TileSheet-Trash-Puddles.png" id="25_tb1x3"]
 [ext_resource type="Texture2D" uid="uid://b1biy40gp8myo" path="res://Hospital Assets/TileSheet-Elevators.png" id="26_isnfw"]
+[ext_resource type="PackedScene" uid="uid://r5gtok76gegi" path="res://scenes/main_character.tscn" id="27_mhpmx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bsaa4"]
 texture = ExtResource("1_sbyli")
@@ -2932,6 +2933,7 @@ texture = ExtResource("9_15v52")
 9:19/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_hwmna"]
+physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_bsaa4")
 sources/2 = SubResource("TileSetAtlasSource_6tp7d")
 sources/3 = SubResource("TileSetAtlasSource_880kb")
@@ -9097,3 +9099,11 @@ layer_0/tile_data = PackedInt32Array(-786454, 131072, 0, -720918, 131072, 1, -65
 tile_set = SubResource("TileSet_rgbhk")
 format = 2
 layer_0/tile_data = PackedInt32Array(-589842, 1507331, 1, -524306, 1507331, 2, -458770, 1507331, 3, -589841, 1572867, 1, -524305, 1572867, 2, -458769, 1572867, 3, -655376, 1638403, 0, -589840, 1638403, 1, -524304, 1638403, 2, -458768, 1638403, 3)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("27_mhpmx")]
+position = Vector2(-25.9999, 38)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(1.5, 1.5)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0

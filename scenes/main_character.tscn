@@ -88,8 +88,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1g8wi"]
-radius = 20.0
-height = 44.0
+radius = 18.0
+height = 42.0
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(33, 36)
@@ -99,10 +99,8 @@ script = ExtResource("1_hui55")
 position = Vector2(15.375, 9.00001)
 scale = Vector2(0.205729, 0.194444)
 sprite_frames = SubResource("SpriteFrames_qanvw")
-animation = &"walk_left"
-frame_progress = 0.893236
+animation = &"walk_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(16, 6)
+position = Vector2(15, 9)
 shape = SubResource("CapsuleShape2D_1g8wi")
-metadata/_edit_group_ = true
