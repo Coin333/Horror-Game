@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://s8mdrlktmxp8"]
+
+[ext_resource type="Texture2D" uid="uid://b72dcken7jmtv" path="res://resized-images (1)/TileSheet-BedRooms.png" id="1_km6t8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sa5vb"]
+atlas = ExtResource("1_km6t8")
+region = Rect2(0, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b037p"]
+atlas = ExtResource("1_km6t8")
+region = Rect2(32, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58a57"]
+atlas = ExtResource("1_km6t8")
+region = Rect2(64, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1p3t"]
+atlas = ExtResource("1_km6t8")
+region = Rect2(96, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fc7v"]
+atlas = ExtResource("1_km6t8")
+region = Rect2(128, 352, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8u1vw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sa5vb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b037p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_58a57")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1p3t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fc7v")
+}],
+"loop": true,
+"name": &"Default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bbiqj"]
+size = Vector2(16, 16)
+
+[sub_resource type="Gradient" id="Gradient_lb41p"]
+offsets = PackedFloat32Array(0, 0.727273)
+colors = PackedColorArray(1, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_b4avb"]
+gradient = SubResource("Gradient_lb41p")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="\\Puzzle1" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+light_mask = 2
+sprite_frames = SubResource("SpriteFrames_8u1vw")
+animation = &"Default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_bbiqj")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture = SubResource("GradientTexture2D_b4avb")
+metadata/_edit_group_ = true
