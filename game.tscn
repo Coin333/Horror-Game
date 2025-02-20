@@ -10199,6 +10199,12 @@ texture = ExtResource("19_6seoi")
 56:29/0 = 0
 57:29/0 = 0
 58:29/0 = 0
+15:13/0 = 0
+14:13/0 = 0
+13:14/0 = 0
+14:14/0 = 0
+15:14/0 = 0
+16:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tt0o3"]
 texture = ExtResource("20_13arn")
@@ -11252,6 +11258,7 @@ texture = ExtResource("22_teg4i")
 
 [sub_resource type="TileSet" id="TileSet_nt5e0"]
 physics_layer_0/collision_layer = 1
+physics_layer_1/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_y5tpw")
 sources/3 = SubResource("TileSetAtlasSource_k3yc6")
 sources/4 = SubResource("TileSetAtlasSource_fkhtx")
@@ -13612,7 +13619,7 @@ layer_0/tile_data = PackedInt32Array(-589842, 1507331, 1, -524306, 1507331, 2, -
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 position = Vector2(1, 0)
-color = Color(0, 0, 0, 1)
+color = Color(0.43134, 0.43134, 0.43134, 1)
 
 [node name="\\Puzzle1" parent="." instance=ExtResource("39_v0k35")]
-position = Vector2(-95, -183)
+position = Vector2(-95, -182)
