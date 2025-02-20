@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://r5gtok76gegi"]
+[gd_scene load_steps=15 format=3 uid="uid://r5gtok76gegi"]
 
 [ext_resource type="Script" path="res://scenes/main_character.gd" id="1_hui55"]
 [ext_resource type="Texture2D" uid="uid://jgpx162i6hex" path="res://ChairForward.png" id="2_fevpn"]
@@ -87,40 +87,19 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vnqu7"]
-radius = 16.0
-height = 34.0
-
-[sub_resource type="Gradient" id="Gradient_ybg7c"]
-offsets = PackedFloat32Array(0, 0.597403, 0.642857, 0.707792)
-colors = PackedColorArray(1, 1, 1, 1, 0.792208, 0.792208, 0.792208, 1, 0.506494, 0.506494, 0.506494, 1, 0, 0, 0, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_yv4n6"]
-gradient = SubResource("Gradient_ybg7c")
-width = 200
-height = 200
-fill = 1
-fill_from = Vector2(0.504587, 0.486239)
-
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(33, 36)
+collision_layer = 3
 script = ExtResource("1_hui55")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1.375, 9.53674e-06)
+position = Vector2(15.375, 9.00001)
 scale = Vector2(0.205729, 0.194444)
 sprite_frames = SubResource("SpriteFrames_qanvw")
-animation = &"walk_down"
-metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
+animation = &"walk_left"
+frame_progress = 0.893236
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_vnqu7")
-metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
-
-[node name="PointLight2D" type="PointLight2D" parent="."]
-range_item_cull_mask = 3
-texture = SubResource("GradientTexture2D_yv4n6")
-metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(1.19209e-07, 3)
+scale = Vector2(0.918117, 0.823803)
+polygon = PackedVector2Array(-9, 15, -8, 19, -5, 23, 0, 27, 6, 28, 26, 28, 31, 23, 31, 11, 32, 2, 8, 4, -4, 16, -6, 14)
