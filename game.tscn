@@ -13611,8 +13611,9 @@ layer_0/tile_data = PackedInt32Array(-589842, 1507331, 1, -524306, 1507331, 2, -
 [node name="node" parent="." instance=ExtResource("38_g0p8l")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 position = Vector2(1, 0)
 color = Color(0, 0, 0, 1)
 
 [node name="\\Puzzle1" parent="." instance=ExtResource("39_v0k35")]
-position = Vector2(-95, -183)
+position = Vector2(369, -191)
