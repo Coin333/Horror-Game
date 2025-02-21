@@ -1,16 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://6iuoy5ga1k5p"]
+[gd_scene load_steps=2 format=3 uid="uid://6iuoy5ga1k5p"]
 
-[ext_resource type="Texture2D" uid="uid://fdnqiq5eecda" path="res://ezgif-38faa3a3b7a334-removebg-preview.png" id="1_kt4qp"]
-[ext_resource type="VideoStream" path="res://202502190936-_2_.ogv" id="2_hctq5"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_45lyc"]
-bg_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 25
-corner_radius_top_right = 25
-corner_radius_bottom_right = 25
-corner_radius_bottom_left = 25
-shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
+[ext_resource type="Texture2D" uid="uid://bih555bmij123" path="res://81zQlmFSK8L._AC_UF894,1000_QL80_.jpg" id="1_ts1ci"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -22,40 +12,7 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -640.0
-offset_top = -360.0
-offset_right = 640.0
-offset_bottom = 360.0
-grow_horizontal = 2
-grow_vertical = 2
-stream = ExtResource("2_hctq5")
-autoplay = true
-
-[node name="Button" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -40.0
-offset_top = 172.0
-offset_right = 333.0
-offset_bottom = 382.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.3, 0.3)
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_constants/align_to_largest_stylebox = 0
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_45lyc")
-icon = ExtResource("1_kt4qp")
-icon_alignment = 1
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -76)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("1_ts1ci")
