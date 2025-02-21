@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://6iuoy5ga1k5p"]
 
-[ext_resource type="Texture2D" uid="uid://bih555bmij123" path="res://81zQlmFSK8L._AC_UF894,1000_QL80_.jpg" id="1_ts1ci"]
+[ext_resource type="VideoStream" path="res://202502210925.ogv" id="1_3pcdg"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -12,7 +12,21 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -76)
-scale = Vector2(1.3, 1.3)
-texture = ExtResource("1_ts1ci")
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 640.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_3pcdg")
+autoplay = true
+loop = true
