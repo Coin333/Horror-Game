@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl3q050m18srl"]
+
+[ext_resource type="VideoStream" path="res://202502190936-_2_.ogv" id="1_lis4w"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchor_right = 1.111
+anchor_bottom = 1.165
+offset_right = 0.12793
+offset_bottom = 0.0799561
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.954
+offset_bottom = -0.27002
+stream = ExtResource("1_lis4w")
+autoplay = true

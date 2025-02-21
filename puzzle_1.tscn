@@ -73,11 +73,11 @@ fill_from = Vector2(0.5, 0.5)
 [node name="\\Puzzle1" type="CharacterBody2D"]
 script = ExtResource("1_6ocms")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Sprite2D1" type="AnimatedSprite2D" parent="."]
 light_mask = 2
 sprite_frames = SubResource("SpriteFrames_8u1vw")
 animation = &"Default"
-frame_progress = 0.551367
+frame_progress = 0.773077
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -8)
