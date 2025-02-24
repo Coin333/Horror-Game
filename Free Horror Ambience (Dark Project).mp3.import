@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ct3g2fl3wiish"
+path="res://.godot/imported/Free Horror Ambience (Dark Project).mp3-ad9b2ff3deb73d0ae65d123d38565de0.mp3str"
+
+[deps]
+
+source_file="res://Free Horror Ambience (Dark Project).mp3"
+dest_files=["res://.godot/imported/Free Horror Ambience (Dark Project).mp3-ad9b2ff3deb73d0ae65d123d38565de0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
