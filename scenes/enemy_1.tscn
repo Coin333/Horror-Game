@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://d1jfp4j85dmjw"]
+[gd_scene load_steps=37 format=3 uid="uid://bgkoa2obgdwwh"]
 
 [ext_resource type="Script" path="res://scenes/enemy1.gd" id="1_g087a"]
 [ext_resource type="Texture2D" uid="uid://bkn8702aj2cjn" path="res://Hospital Assets/Characters/Enemigo1/Enemigo1_Moving.png" id="2_r6a6r"]

@@ -91,6 +91,7 @@ animations = [{
 radius = 94.0053
 
 [node name="enemy2" type="CharacterBody2D"]
+collision_layer = 3
 script = ExtResource("1_sdog1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -110,6 +111,8 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area2D"]
+light_mask = 2
+visibility_layer = 2
 position = Vector2(1, 0)
 rotation = -1.5708
 shape = SubResource("CircleShape2D_57sai")
