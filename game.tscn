@@ -1,4 +1,4 @@
-[gd_scene load_steps=84 format=3 uid="uid://dyy12p68mgav6"]
+[gd_scene load_steps=84 format=3 uid="uid://b6thb2tmkg4xs"]
 
 [ext_resource type="Texture2D" uid="uid://byuunbjdqgxml" path="res://tiles_laboratory_LandOfPixels/16px/spriteSheet_lightBulbSmallAnimation_16x16.png" id="1_sbyli"]
 [ext_resource type="Texture2D" uid="uid://dgib55dajrfbn" path="res://Tiles/shop-and-hospital.png" id="2_vqn8q"]
