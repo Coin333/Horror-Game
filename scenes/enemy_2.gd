@@ -16,11 +16,11 @@ func _physics_process(delta):
 	else:
 		$AnimatedSprite2D.play("idle")
 
-func _on_detection_area_2d_body_entered(body: Node2D) -> void:
+func _on_detection_area_2d_body_entered(body: Node2D):
 	player = body
 	Player_chase = true
 
 
-func _on_detection_area_2d_body_exited(body: Node2D) -> void:
+func _on_detection_area_2d_body_exited(body: Node2D):
 	player = body
 	Player_chase = false
