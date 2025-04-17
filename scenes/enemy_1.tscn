@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bgkoa2obgdwwh"]
+[gd_scene load_steps=37 format=3 uid="uid://d1jfp4j85dmjw"]
 
 [ext_resource type="Script" path="res://scenes/enemy1.gd" id="1_g087a"]
 [ext_resource type="Texture2D" uid="uid://bkn8702aj2cjn" path="res://Hospital Assets/Characters/Enemigo1/Enemigo1_Moving.png" id="2_r6a6r"]
@@ -266,8 +266,6 @@ position = Vector2(316, 302)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_ui10n")
 animation = &"monster_down"
-frame = 3
-frame_progress = 0.890668
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(318, 309)

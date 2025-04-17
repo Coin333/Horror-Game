@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://b6thb2tmkg4xs"]
+[gd_scene load_steps=70 format=3 uid="uid://b6thb2tmkg4xs"]
 
 [ext_resource type="Texture2D" uid="uid://byuunbjdqgxml" path="res://tiles_laboratory_LandOfPixels/16px/spriteSheet_lightBulbSmallAnimation_16x16.png" id="1_sbyli"]
 [ext_resource type="Texture2D" uid="uid://dgib55dajrfbn" path="res://Tiles/shop-and-hospital.png" id="2_vqn8q"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://cmys8lv8re5s7" path="res://resized-images (1)/TileSheet-BloodAndDead.png" id="21_t1ksf"]
 [ext_resource type="Texture2D" uid="uid://cio5kx2882cmh" path="res://resized-images (1)/TileSheet-Cafeteria.png" id="22_teg4i"]
 [ext_resource type="Texture2D" uid="uid://c7uil2cv06ose" path="res://resized-images (1)/TileshetCameras.png" id="23_uvtf0"]
+[ext_resource type="PackedScene" uid="uid://dvw0fimms18ad" path="res://scenes/enemy_2.tscn" id="26_0xkxx"]
 [ext_resource type="PackedScene" uid="uid://b4bpvwh6fd64a" path="res://scenes/node.tscn" id="38_g0p8l"]
 [ext_resource type="PackedScene" uid="uid://s8mdrlktmxp8" path="res://puzzle_1.tscn" id="39_v0k35"]
 
@@ -17724,3 +17725,6 @@ color = Color(0, 0, 0, 1)
 
 [node name="\\Puzzle1" parent="." instance=ExtResource("39_v0k35")]
 position = Vector2(369, -191)
+
+[node name="enemy2" parent="." instance=ExtResource("26_0xkxx")]
+position = Vector2(-337, 138)
