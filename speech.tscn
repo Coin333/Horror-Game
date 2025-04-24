@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bxqt1824cib1i"]
+[gd_scene load_steps=9 format=3 uid="uid://bxqt1824cib1i"]
 
 [ext_resource type="Texture2D" uid="uid://bw4yx7x50co20" path="res://413-4138622_text-box-pixel-art-cupcake.png" id="1_1y5i8"]
 [ext_resource type="Script" path="res://speech.gd" id="1_itpic"]
@@ -15,23 +15,41 @@ texture_margin_bottom = 20.0
 
 [sub_resource type="Theme" id="Theme_ex4dc"]
 
+[sub_resource type="Gradient" id="Gradient_8jwuy"]
+offsets = PackedFloat32Array(0, 0.038961)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_31vp4"]
+gradient = SubResource("Gradient_8jwuy")
+
 [node name="Speech" type="Node2D"]
+light_mask = 2
 script = ExtResource("1_itpic")
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
+light_mask = 2
+visibility_layer = 3
 offset_right = 76.0
 offset_bottom = 188.0
 theme = SubResource("Theme_4xo1h")
 theme_override_styles/panel = SubResource("StyleBoxTexture_l308v")
 
 [node name="Label" type="Label" parent="PanelContainer"]
+light_mask = 2
 layout_mode = 2
 size_flags_vertical = 1
 theme = SubResource("Theme_ex4dc")
+theme_override_colors/font_color = Color(0.0941176, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_32x4t")
 theme_override_font_sizes/font_size = 56
 vertical_alignment = 1
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(968, 88)
+scale = Vector2(32.5, 196)
+range_item_cull_mask = 2
+texture = SubResource("GradientTexture1D_31vp4")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

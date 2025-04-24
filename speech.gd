@@ -3,10 +3,11 @@ extends Node2D
 @onready var label = $PanelContainer/Label
 @onready var timer = $Timer
 
-var full_text = "Hey there! I'm an animated speech bubble."
+var full_text = "Welcome to your waking nightmare"
 var current_index = 0
 var typing_speed = 0.05 # seconds between each character
-var message = 1
+var message = 0
+var textmsg = ["Welcome to your waking nightmare", "Movement is pretty simple", "WASD/Arrow Keys will help you move your character", "Press Space to interact with objects bathed in red", "Try not to die and have fun!"]
 
 func _ready():
 	label.text = ""
@@ -31,7 +32,11 @@ func _on_typing_timeout():
 	else:
 		timer.stop()
 		timer.disconnect("timeout", _on_typing_timeout)
-		timer.wait_time = 3
-		timer.connect("timeout", _on_timer_timeout)
-		message += 1
-		timer.start()
+		if(message <=3):
+			timer.wait_time = 3
+			timer.connect("timeout", _on_timer_timeout)
+			message += 1
+			full_text = textmsg[message]
+			timer.start()
+		else:
+			$PanelContainer.hide()
