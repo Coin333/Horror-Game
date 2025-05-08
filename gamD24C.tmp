@@ -17691,6 +17691,4 @@ color = Color(0, 0, 0, 1)
 position = Vector2(369, -191)
 
 [node name="enemy2" parent="." instance=ExtResource("26_0xkxx")]
-position = Vector2(-334, 129)
-collision_layer = 3
-collision_mask = 2
+position = Vector2(-337, 138)
