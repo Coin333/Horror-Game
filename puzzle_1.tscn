@@ -86,3 +86,5 @@ shape = SubResource("RectangleShape2D_bbiqj")
 [node name="PointLight2D" type="PointLight2D" parent="."]
 texture = SubResource("GradientTexture2D_b4avb")
 metadata/_edit_group_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
