@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4bpvwh6fd64a"]
+[gd_scene load_steps=4 format=3 uid="uid://b4bpvwh6fd64a"]
 
 [ext_resource type="PackedScene" uid="uid://bxqt1824cib1i" path="res://speech.tscn" id="2_4xu6v"]
+[ext_resource type="PackedScene" uid="uid://c15p2utepcly2" path="res://jumpscare.tscn" id="3_1cmle"]
 [ext_resource type="PackedScene" uid="uid://r5gtok76gegi" path="res://scenes/main_character.tscn" id="3_a7gvm"]
 
 [node name="node" type="Node"]
@@ -18,3 +19,6 @@ position_smoothing_speed = 10.0
 visibility_layer = 3
 position = Vector2(-355, 125)
 scale = Vector2(0.25, 0.25)
+
+[node name="Jumpscare" parent="." instance=ExtResource("3_1cmle")]
+position = Vector2(-8, 0)

@@ -6,7 +6,7 @@ extends CanvasLayer
 
 func _ready():
 	scare_image.visible = false
-	trigger_jumpscare()
+	
 
 # Call this function to trigger the jumpscare
 func trigger_jumpscare():
