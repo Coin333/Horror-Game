@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://b4bpvwh6fd64a"]
+[gd_scene load_steps=3 format=3 uid="uid://b4bpvwh6fd64a"]
 
+[ext_resource type="PackedScene" uid="uid://bxqt1824cib1i" path="res://speech.tscn" id="2_4xu6v"]
 [ext_resource type="PackedScene" uid="uid://r5gtok76gegi" path="res://scenes/main_character.tscn" id="3_a7gvm"]
 
 [node name="node" type="Node"]
@@ -8,6 +9,12 @@
 position = Vector2(-333, -109)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+light_mask = 2
 zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
+
+[node name="Speech" parent="CharacterBody2D" instance=ExtResource("2_4xu6v")]
+visibility_layer = 3
+position = Vector2(-355, 125)
+scale = Vector2(0.25, 0.25)

@@ -13,6 +13,7 @@ config_version=5
 config/name="Horror Game Web App"
 run/main_scene="res://scenes/node.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.svg"
 
 [display]
@@ -57,4 +58,4 @@ down={
 
 [rendering]
 
-environment/defaults/default_clear_color=Color(0.385493, 0.385492, 0.385492, 1)
+environment/defaults/default_clear_color=Color(0.162066, 0.162066, 0.162066, 1)

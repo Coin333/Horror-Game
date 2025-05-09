@@ -1,6 +1,5 @@
-[gd_scene load_steps=37 format=3 uid="uid://d1jfp4j85dmjw"]
+[gd_scene load_steps=36 format=3 uid="uid://d1jfp4j85dmjw"]
 
-[ext_resource type="Script" path="res://scenes/enemy1.gd" id="1_g087a"]
 [ext_resource type="Texture2D" uid="uid://bkn8702aj2cjn" path="res://Hospital Assets/Characters/Enemigo1/Enemigo1_Moving.png" id="2_r6a6r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q2gxr"]
@@ -257,8 +256,7 @@ height = 56.0
 [node name="Enemy1" type="Node2D"]
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(13, -67)
-script = ExtResource("1_g087a")
+position = Vector2(39, -70)
 metadata/_edit_group_ = true
 
 [node name="Monster1" type="AnimatedSprite2D" parent="Area2D"]
@@ -266,6 +264,7 @@ position = Vector2(316, 302)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_ui10n")
 animation = &"monster_down"
+frame_progress = 0.192671
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(318, 309)

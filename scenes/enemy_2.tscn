@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dvw0fimms18ad"]
+[gd_scene load_steps=16 format=3 uid="uid://dvw0fimms18ad"]
 
 [ext_resource type="Texture2D" uid="uid://dg8w7605fm4m" path="res://Hospital Assets/Characters/Enemigo2/Enemigo2_Moving.png" id="1_s83om"]
 [ext_resource type="Script" path="res://scenes/enemy_2.gd" id="1_sdog1"]
@@ -87,37 +87,33 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xcfr"]
-size = Vector2(27, 11.5)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_jejid"]
-radius = 76.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_57sai"]
+radius = 94.0053
 
 [node name="enemy2" type="CharacterBody2D"]
-position = Vector2(-76, 9)
+collision_layer = 3
 script = ExtResource("1_sdog1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-0.999992, 0.999999)
-rotation = 0.0012368
-scale = Vector2(0.987401, 0.910006)
+position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_pm0hi")
-animation = &"idle"
-offset = Vector2(0.606611, -2.82384)
+animation = &"movingV"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
-shape = SubResource("RectangleShape2D_0xcfr")
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(2, 0)
+polygon = PackedVector2Array(-14, 13, -12, 0, -6, 6, 0, 6, 5, 0, 10, 10, 15, 11, 7, -6, 1, -2, -6, -4, -12, -6, -19, 12)
+metadata/_edit_group_ = true
 
-[node name="FollowArea" type="Area2D" parent="."]
-position = Vector2(0, 2)
+[node name="detection_area2D" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="FollowArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area2D"]
+light_mask = 3
+visibility_layer = 3
 position = Vector2(1, 0)
-shape = SubResource("CircleShape2D_jejid")
-metadata/_edit_group_ = true
+rotation = -1.5708
+shape = SubResource("CircleShape2D_57sai")
 
-[connection signal="body_entered" from="FollowArea" to="." method="_on_follow_area_body_entered"]
-[connection signal="body_exited" from="FollowArea" to="." method="_on_follow_area_body_exited"]
+[connection signal="body_entered" from="detection_area2D" to="." method="_on_detection_area_2d_body_entered"]
+[connection signal="body_exited" from="detection_area2D" to="." method="_on_detection_area_2d_body_exited"]
