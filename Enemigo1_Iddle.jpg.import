@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddy4ou3u2sx2s"
-path="res://.godot/imported/wheel-chair-back-pixilart.png-77ced64e71ca669391e6baf0e06435fb.ctex"
+uid="uid://d2qtfpoy3nauy"
+path="res://.godot/imported/Enemigo1_Iddle.jpg-d460b4283055a0ecf900f9b733293e94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://wheel-chair-back-pixilart.png"
-dest_files=["res://.godot/imported/wheel-chair-back-pixilart.png-77ced64e71ca669391e6baf0e06435fb.ctex"]
+source_file="res://Enemigo1_Iddle.jpg"
+dest_files=["res://.godot/imported/Enemigo1_Iddle.jpg-d460b4283055a0ecf900f9b733293e94.ctex"]
 
 [params]
 

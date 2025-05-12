@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c15p2utepcly2"]
 
 [ext_resource type="Script" path="res://jumpscarecontroller.gd" id="1_vlyph"]
-[ext_resource type="Texture2D" uid="uid://ba3tso60uy2oh" path="res://Enemigo1_Iddle.png" id="2_efnop"]
+[ext_resource type="Texture2D" uid="uid://d2qtfpoy3nauy" path="res://Enemigo1_Iddle.jpg" id="2_0s15o"]
 [ext_resource type="AudioStream" uid="uid://dr1oph3udkqow" path="res://alien-screaming-82512.mp3" id="3_5utgi"]
 
 [node name="Jumpscare" type="Node2D"]
@@ -11,8 +11,8 @@ script = ExtResource("1_vlyph")
 
 [node name="ScareImage" type="TextureRect" parent="Jumpscarecontroller"]
 offset_right = 1152.0
-offset_bottom = 648.0
-texture = ExtResource("2_efnop")
+offset_bottom = 664.0
+texture = ExtResource("2_0s15o")
 
 [node name="ScreamSound" type="AudioStreamPlayer2D" parent="Jumpscarecontroller"]
 stream = ExtResource("3_5utgi")
