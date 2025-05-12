@@ -1,0 +1,91 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjnq1ui01a4aa"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_qpubu"]
+
+[node name="World" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qpubu")
+
+[node name="Keypad" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Row 1" type="HBoxContainer" parent="Keypad"]
+layout_mode = 2
+
+[node name="1" type="Button" parent="Keypad/Row 1"]
+layout_mode = 2
+text = "1
+"
+
+[node name="2" type="Button" parent="Keypad/Row 1"]
+layout_mode = 2
+text = "2"
+
+[node name="3" type="Button" parent="Keypad/Row 1"]
+layout_mode = 2
+text = "3"
+
+[node name="Row 2" type="HBoxContainer" parent="Keypad"]
+layout_mode = 2
+
+[node name="4" type="Button" parent="Keypad/Row 2"]
+layout_mode = 2
+text = "4"
+
+[node name="5" type="Button" parent="Keypad/Row 2"]
+layout_mode = 2
+text = "5"
+
+[node name="6" type="Button" parent="Keypad/Row 2"]
+layout_mode = 2
+text = "6"
+
+[node name="Row 3" type="HBoxContainer" parent="Keypad"]
+layout_mode = 2
+
+[node name="7" type="Button" parent="Keypad/Row 3"]
+layout_mode = 2
+text = "7"
+
+[node name="8" type="Button" parent="Keypad/Row 3"]
+layout_mode = 2
+text = "8"
+
+[node name="9" type="Button" parent="Keypad/Row 3"]
+layout_mode = 2
+text = "9"
+
+[node name="Row 4" type="HBoxContainer" parent="Keypad"]
+layout_mode = 2
+
+[node name="pound" type="Button" parent="Keypad/Row 4"]
+layout_mode = 2
+text = "#"
+
+[node name="0" type="Button" parent="Keypad/Row 4"]
+layout_mode = 2
+text = "0"
+
+[node name="asterisk" type="Button" parent="Keypad/Row 4"]
+layout_mode = 2
+text = "*"
+
+[connection signal="pressed" from="Keypad/Row 1/1" to="Keypad" method="_on_1_pressed"]
+[connection signal="pressed" from="Keypad/Row 1/2" to="Keypad" method="_on_2_pressed"]
+[connection signal="pressed" from="Keypad/Row 1/3" to="Keypad" method="_on_3_pressed"]
+[connection signal="pressed" from="Keypad/Row 2/4" to="Keypad" method="_on_4_pressed"]
+[connection signal="pressed" from="Keypad/Row 2/5" to="Keypad" method="_on_5_pressed"]
+[connection signal="pressed" from="Keypad/Row 2/6" to="Keypad" method="_on_6_pressed"]
+[connection signal="pressed" from="Keypad/Row 3/7" to="Keypad" method="_on_7_pressed"]
+[connection signal="pressed" from="Keypad/Row 3/8" to="Keypad" method="_on_8_pressed"]
+[connection signal="pressed" from="Keypad/Row 3/9" to="Keypad" method="_on_9_pressed"]
+[connection signal="pressed" from="Keypad/Row 4/pound" to="Keypad" method="_on_pound_pressed"]
+[connection signal="pressed" from="Keypad/Row 4/0" to="Keypad" method="_on_0_pressed"]
+[connection signal="pressed" from="Keypad/Row 4/asterisk" to="Keypad" method="_on_asterisk_pressed"]
