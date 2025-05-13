@@ -33,4 +33,5 @@ func _physics_process(delta):
 	var isLeft = velocity.x > 0
 	sprite_2d.flip_h = isLeft
 	
+	
 #var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")

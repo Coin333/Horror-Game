@@ -286,17 +286,16 @@ scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_rl2y0")
 animation = &"idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Hitbox" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_jdjpr")
 
 [node name="detection_area2D" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area2D"]
+[node name="Aura" type="CollisionShape2D" parent="detection_area2D"]
 light_mask = 3
 visibility_layer = 3
-position = Vector2(1, 0)
 rotation = -1.5708
 shape = SubResource("CircleShape2D_s6x22")
 
