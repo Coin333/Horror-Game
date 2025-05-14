@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b4bpvwh6fd64a"]
+[gd_scene load_steps=6 format=3 uid="uid://b4bpvwh6fd64a"]
 
 [ext_resource type="Script" path="res://scenes/node.gd" id="1_qnuno"]
 [ext_resource type="PackedScene" uid="uid://bxqt1824cib1i" path="res://speech.tscn" id="2_4xu6v"]
 [ext_resource type="PackedScene" uid="uid://c15p2utepcly2" path="res://jumpscare.tscn" id="3_1cmle"]
 [ext_resource type="PackedScene" uid="uid://r5gtok76gegi" path="res://scenes/main_character.tscn" id="3_a7gvm"]
+[ext_resource type="VideoStream" path="res://skibidi.ogv" id="5_fu652"]
 
 [node name="node" type="Node"]
 script = ExtResource("1_qnuno")
@@ -24,5 +25,12 @@ scale = Vector2(0.25, 0.25)
 
 [node name="Jumpscare" parent="." instance=ExtResource("3_1cmle")]
 position = Vector2(-8, 0)
+
+[node name="End Screen" type="VideoStreamPlayer" parent="."]
+offset_left = -968.0
+offset_top = -472.0
+offset_right = 312.0
+offset_bottom = 248.0
+stream = ExtResource("5_fu652")
 
 [connection signal="skibidi" from="." to="Jumpscare" method="_on_node_skibidi"]

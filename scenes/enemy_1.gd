@@ -9,10 +9,7 @@ var target_position: Vector2
 @onready var sprite_2d = $AnimatedSprite2D
 
 func _physics_process(delta):
-	if target_position:
-		var direction = (target_position - global_position).normalized()
-		velocity = direction * SPEED
-		move_and_slide()
+
 	if player_chase:
 		position += (player.position - position)/speed
 		

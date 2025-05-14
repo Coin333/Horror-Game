@@ -19,6 +19,4 @@ func _on_player_died():
 func _process(delta: float) -> void:
 	pass
 
-
-func _on_died():
-	await get_tree().create_timer(1.55).timeout # Replace with function body.
+	

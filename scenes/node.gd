@@ -12,3 +12,5 @@ func _process(delta: float) -> void:
 
 func _on_game_died():
 	skibidi.emit()
+	await get_tree().create_timer(1.55).timeout
+	$"End Screen".play()
