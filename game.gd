@@ -14,6 +14,9 @@ func _on_player_died():
 	if (js == 0):
 		died.emit()
 		js +=1
+		
+		await get_tree().create_timer(1.55).timeout
+		get_tree().change_scene_to_file("res://end_screen.tscn")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

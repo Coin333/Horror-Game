@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 250.0
 @onready var sprite_2d = $Sprite2D
-
+@onready var squeak = $AudioStreamPlayer2D
 
 func _physics_process(delta):
 
@@ -13,7 +13,10 @@ func _physics_process(delta):
 	else:
 		sprite_2d.animation = "walk_down"
 
-
+	if (abs(velocity.x) + abs(velocity.y) == 0):
+		squeak.stop()
+	else:
+		squeak.play()
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

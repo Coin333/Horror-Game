@@ -1,8 +1,9 @@
-[gd_scene load_steps=18 format=3 uid="uid://r5gtok76gegi"]
+[gd_scene load_steps=19 format=3 uid="uid://r5gtok76gegi"]
 
 [ext_resource type="Script" path="res://scenes/main_character.gd" id="1_hui55"]
 [ext_resource type="Texture2D" uid="uid://jgpx162i6hex" path="res://ChairForward.png" id="2_fevpn"]
 [ext_resource type="Texture2D" uid="uid://clcs2hoefnuph" path="res://ChairSide.png" id="3_ewuo7"]
+[ext_resource type="AudioStream" uid="uid://6kna6iyfprpd" path="res://389687__shamewap__squeaky-wheels.wav" id="4_5xkiu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m6e6w"]
 atlas = ExtResource("2_fevpn")
@@ -125,3 +126,6 @@ range_item_cull_mask = 3
 texture = SubResource("GradientTexture2D_l3flj")
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_5xkiu")
