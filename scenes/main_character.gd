@@ -13,10 +13,11 @@ func _physics_process(delta):
 	else:
 		sprite_2d.animation = "walk_down"
 
-	if (abs(velocity.x) + abs(velocity.y) == 0):
-		squeak.stop()
+	if (velocity.x + velocity.y != 0):
+		if(squeak.playing == false):
+			squeak.play()
 	else:
-		squeak.play()
+		squeak.stop()
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

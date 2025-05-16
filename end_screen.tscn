@@ -13,6 +13,7 @@ offset_top = -32.0
 offset_right = 1216.0
 offset_bottom = 688.0
 stream = ExtResource("1_g5fbn")
+volume_db = -18.82
 autoplay = true
 loop = true
 
