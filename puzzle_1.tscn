@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://s8mdrlktmxp8"]
+[gd_scene load_steps=14 format=3 uid="uid://s8mdrlktmxp8"]
 
 [ext_resource type="Script" path="res://puzzle_1.gd" id="1_6ocms"]
 [ext_resource type="Texture2D" uid="uid://b72dcken7jmtv" path="res://resized-images (1)/TileSheet-BedRooms.png" id="1_km6t8"]
@@ -70,7 +70,11 @@ gradient = SubResource("Gradient_lb41p")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_pvam4"]
+radius = 72.4431
+
 [node name="\\Puzzle1" type="CharacterBody2D"]
+visible = false
 script = ExtResource("1_6ocms")
 
 [node name="Sprite2D1" type="AnimatedSprite2D" parent="."]
@@ -88,3 +92,6 @@ texture = SubResource("GradientTexture2D_b4avb")
 metadata/_edit_group_ = true
 
 [node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_pvam4")
