@@ -3,7 +3,7 @@ extends CharacterBody2D
 var speed = 50
 var player_chase = false
 var player = null
-@export var SPEED := 100.0
+@export var SPEED := 50.0
 var target_position: Vector2
 
 @onready var sprite_2d = $AnimatedSprite2D
@@ -21,10 +21,10 @@ func _physics_process(delta):
 				sprite_2d.play("movingLeft")
 		
 		else:
-			if (velocity.y > 1):
+			if (velocity.y < 1):
 				sprite_2d.play("movingDown")
 		
-			if (velocity.y < 1):
+			if (velocity.y > 1):
 				sprite_2d.play("movingUp")
 	else:
 		$AnimatedSprite2D.play("idle")
