@@ -12,6 +12,7 @@ script = ExtResource("1_xpx7i")
 script = ExtResource("1_vlyph")
 
 [node name="ScareImage" type="TextureRect" parent="Jumpscarecontroller"]
+visible = false
 offset_right = 1152.0
 offset_bottom = 664.0
 texture = ExtResource("2_0s15o")
