@@ -109,6 +109,7 @@ collision_layer = 3
 script = ExtResource("1_hui55")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(1.375, 9.53674e-06)
 scale = Vector2(0.205729, 0.194444)
 sprite_frames = SubResource("SpriteFrames_qanvw")
