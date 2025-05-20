@@ -30,6 +30,7 @@ color = Color(0.0562916, 0.0562916, 0.0562916, 1)
 [node name="Label" type="Label" parent="VBoxContainer/MarginContainer"]
 layout_mode = 2
 size_flags_vertical = 1
+theme_override_font_sizes/font_size = 200
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -42,24 +43,28 @@ columns = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "1"
 
 [node name="Button2" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "2"
 
 [node name="Button3" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "3"
 
 [node name="Button4" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "4
 "
 
@@ -67,49 +72,57 @@ text = "4
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "5"
 
 [node name="Button6" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "6"
 
 [node name="Button7" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "7"
 
 [node name="Button8" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "8"
 
 [node name="Button9" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "9"
 
 [node name="ButtonClear" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "Clear"
 
 [node name="Button11" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "0"
 
 [node name="ButtonOK" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "ENTER"
+theme_override_font_sizes/font_size = 50
+text = "Enter"
 
 [connection signal="pressed" from="VBoxContainer/GridContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/GridContainer/Button2" to="." method="_on_button_2_pressed"]
