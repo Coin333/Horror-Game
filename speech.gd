@@ -7,8 +7,8 @@ var full_text = "Welcome to your waking nightmare"
 var current_index = 0
 var typing_speed = 0.05 # seconds between each character
 var message = 0
-var textmsg = ["Welcome to your waking nightmare", "Movement is pretty simple", "WASD/Arrow Keys will help you move your character", "Press Space to interact with objects bathed in red", "Try not to die and have fun!"]
-
+var textmsg = ["... Where am I?", "Movement is pretty simple", "WASD/Arrow Keys will help you move your character", "Press Space to interact with objects bathed in red", "Try not to die and have fun!"]
+var textmsg2 = ["Welcome to your waking nightmare", "Movement is pretty simple", "WASD/Arrow Keys will help you move your character", "Press Space to interact with objects bathed in red", "Try not to die and have fun!"]
 func _ready():
 	label.text = ""
 	timer.wait_time = 2.0 # Wait 2 seconds before starting text animation

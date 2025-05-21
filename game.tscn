@@ -17723,9 +17723,9 @@ sources/1 = SubResource("TileSetAtlasSource_t2iu5")
 script = ExtResource("1_6apmp")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -2000.0
+offset_left = -1998.0
 offset_top = -1435.0
-offset_right = 2057.0
+offset_right = 2059.0
 offset_bottom = 1374.0
 texture = SubResource("GradientTexture2D_yqqvc")
 
@@ -17747,7 +17747,6 @@ layer_0/tile_data = PackedInt32Array(22, 1703957, 8, 65558, 1703957, 9, 23, 1769
 [node name="node" parent="." instance=ExtResource("38_g0p8l")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 position = Vector2(1, 0)
 color = Color(0, 0, 0, 1)
 
@@ -17755,7 +17754,7 @@ color = Color(0, 0, 0, 1)
 position = Vector2(369, -191)
 
 [node name="enemy_1" parent="." instance=ExtResource("27_t7f2w")]
-position = Vector2(266, -94)
+position = Vector2(-376, 78)
 
 [connection signal="died" from="." to="." method="_on_died"]
 [connection signal="died" from="." to="node" method="_on_game_died"]

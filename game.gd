@@ -1,5 +1,6 @@
 extends Node2D
 signal died
+signal back
 @onready var player = $node/CharacterBody2D
 @onready var enemy = $enemy_1/Hitbox
 var js = 0
