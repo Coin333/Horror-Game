@@ -17754,7 +17754,7 @@ color = Color(0, 0, 0, 1)
 position = Vector2(369, -191)
 
 [node name="enemy_1" parent="." instance=ExtResource("27_t7f2w")]
-position = Vector2(266, 144)
+position = Vector2(-376, 78)
 
 [connection signal="died" from="." to="." method="_on_died"]
 [connection signal="died" from="." to="node" method="_on_game_died"]

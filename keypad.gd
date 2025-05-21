@@ -1,6 +1,6 @@
 extends Control
 
-
+signal back
 const password = "5225"
 
 @onready var text_edit = $VBoxContainer/MarginContainer/Label
@@ -59,8 +59,14 @@ func _on_button_11_pressed() -> void:
 
 func _on_button_ok_pressed() -> void:
 	if text_edit.text == password:
+		text_edit.text = "correct"
 		print("correct")
 
 	else:
 		print("wrong")
 		text_edit.text =""
+
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file("res://game.tscn")
+	back.emit()
