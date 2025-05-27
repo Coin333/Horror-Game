@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://v7qe1krfj17e"]
+
+[node name="Cutscene" type="Node2D"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+autoplay = true
