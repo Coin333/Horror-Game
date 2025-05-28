@@ -1,7 +1,7 @@
 extends Control
 
 
-const password = "0911"
+const password = "5225"
 
 @onready var text_edit = $VBoxContainer/MarginContainer/Label
 

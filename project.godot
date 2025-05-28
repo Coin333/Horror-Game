@@ -23,7 +23,6 @@ Global="*res://global.gd"
 [display]
 
 window/stretch/mode="viewport"
-window/stretch/aspect="expand"
 
 [editor_plugins]
 
