@@ -1,8 +1,19 @@
-[gd_scene format=3 uid="uid://v7qe1krfj17e"]
+[gd_scene load_steps=3 format=3 uid="uid://v7qe1krfj17e"]
+
+[ext_resource type="Script" path="res://cutscene.gd" id="1_05ctk"]
+[ext_resource type="VideoStream" path="res://Finalcutscene.ogv" id="1_q5fsv"]
 
 [node name="Cutscene" type="Node2D"]
+script = ExtResource("1_05ctk")
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
+stream = ExtResource("1_q5fsv")
 autoplay = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 140.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

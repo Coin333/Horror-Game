@@ -60,6 +60,7 @@ func _on_button_11_pressed() -> void:
 func _on_button_ok_pressed() -> void:
 	if text_edit.text == password:
 		print("correct")
+		get_tree().change_scene_to_file("res://cutscene.tscn")
 	else:
 		print("wrong")
 		text_edit.text =""
